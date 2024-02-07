@@ -7,14 +7,13 @@ import React from "react";
 interface IProps {
   route: string;
   href: string;
-  setActive: boolean
+  setActive: boolean;
 }
 
 const NavItem = ({ route, href, setActive }: IProps) => {
   const currentPath = usePathname();
   let isActive = false;
   if (setActive) {
-
     isActive = currentPath === href;
   }
 

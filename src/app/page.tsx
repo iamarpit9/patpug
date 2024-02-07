@@ -6,19 +6,19 @@ import ch1 from "/public/card/ch1.webp";
 import ch2 from "/public/card/ch2.webp";
 import ch3 from "/public/card/ch3.webp";
 import Link from "next/link";
-import whatsappIcon from "/public/whatsappicon.svg"
-import instaIcon from "/public/instagramicon.svg"
+import whatsappIcon from "/public/whatsappicon.svg";
+import instaIcon from "/public/instagramicon.svg";
 
 export default function Home() {
   return (
     <>
       <MaxWidthWrapper>
-        <div className="py-5 flex flex-col md:flex-row text-center max-w-3xl">
+        <div className="py-5 m-5 flex flex-col lg:flex-row text-center max-w-3xl">
           <Image src={home1} alt="home1" className="lg:min-h-[400px]" />
-          <div className="bg-[#EFF5F6] text-center md:min-w-[388px]">
-            <div className="flex flex-col justify-center items-center p-10">
+          <div className="bg-[#EFF5F6] text-center lg:min-w-[388px]">
+            <div className="flex flex-col justify-center items-center p-5 md:p-10">
               <div className="tracking-[0.2rem] text-[#627478]">WELCOME</div>
-              <div className="text-[44px] font-[Playfair_Display]">
+              <div className="text-[40px] md:text-[44px]">
                 We are the bath linen/towel Experts
               </div>
               <div className="text-[#627478]">
@@ -28,9 +28,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pt-20 md:max-w-3xl">
+        <div className="pt-20 md:max-w-3xl m-5 ">
           <div className="tracking-[0.2rem] text-[#627478]">ABOUT US</div>
-          <div className="flex flex-col py-5 md:flex-row">
+          <div className="flex flex-col py-5 lg:flex-row lg:gap-10">
             <Card
               title="Our Mission"
               decription="To provide our customers best quality products at reasonable prices while ensuring we meet our commitments in terms of timely delivery and transparency. "
@@ -55,49 +55,75 @@ export default function Home() {
         <div className="pt-20 tracking-[0.2rem] text-[#627478]">CONTACT US</div>
         <div className="flex flex-col items-center justify-center py-10">
           <div className="text-[#5e5e5e] font-light text-[14px] md:text-[16px] text-center">
-            We love our customers, so feel free to ping us on Whatsapp during normal business hours.
+            We love our customers, so feel free to ping us on Whatsapp during
+            normal business hours.
           </div>
 
-          <Link href="https://wa.me/917456848285" target="_blank" className="mt-6 h-[40px] md:w-[286px] md:h-[56px] bg-[#455964] flex items-center justify-center px-1 hover:bg-[#4f6672] text-white">
-            <Image src={whatsappIcon} alt="whatsapp" className="w-4 h-4 md:w-5 md:h-5" />
-            <span className="px-2">
-              Message us on Whatsapp
-            </span>
+          <Link
+            href="https://wa.me/917456848285"
+            target="_blank"
+            className="mt-6 h-[40px] md:w-[286px] md:h-[56px] bg-[#455964] flex items-center justify-center px-1 hover:bg-[#4f6672] text-white"
+          >
+            <Image
+              src={whatsappIcon}
+              alt="whatsapp"
+              className="w-4 h-4 md:w-5 md:h-5"
+            />
+            <span className="px-2">Message us on Whatsapp</span>
           </Link>
 
           <div className="pt-16 text-center font-light text-[#5e5e5e] text-sm md:text-[16px]">
-
-            <div >
-              General inquiries: <Link href="mailto:info@patpug.com" className="hover:text-[#3f484a] hover:font-normal">info@patpug.com</Link>
+            <div>
+              General inquiries:{" "}
+              <Link
+                href="mailto:info@patpug.com"
+                className="hover:text-[#3f484a] hover:font-normal"
+              >
+                info@patpug.com
+              </Link>
             </div>
             <div>
-              For B2B orders: <Link href="mailto:corporate@patpug.com" className="hover:text-[#3f484a] hover:font-normal">corporate@patpug.com</Link>
+              For B2B orders:{" "}
+              <Link
+                href="mailto:corporate@patpug.com"
+                className="hover:text-[#3f484a] hover:font-normal"
+              >
+                corporate@patpug.com
+              </Link>
             </div>
             <div>
-              For export inquiries: <Link href="mailto:exports@patpug.com" className="hover:text-[#3f484a] hover:font-normal">exports@patpug.com
-
+              For export inquiries:{" "}
+              <Link
+                href="mailto:exports@patpug.com"
+                className="hover:text-[#3f484a] hover:font-normal"
+              >
+                exports@patpug.com
               </Link>
             </div>
           </div>
-
         </div>
 
-        <div className="pt-20 tracking-[0.2rem] text-[#627478]">CONNECT WITH US</div>
+        <div className="pt-20 tracking-[0.2rem] text-[#627478]">
+          CONNECT WITH US
+        </div>
 
         <div className="flex flex-col items-center justify-center py-10">
           <Link href="https://www.instagram.com/patpug_life/" target="_blank">
             <Image src={instaIcon} alt="instagram" className="w-10 h-10" />
           </Link>
         </div>
-
-
-
-
       </MaxWidthWrapper>
-      {/* <div className="pt-20 text-white">
-        <div className="w-screen bg-red-50"> hello</div>
-      </div> */}
-    </>
 
+      <div className="pt-20">
+        <div className="bg-[#EFF5F6] w-screen h-fit flex flex-col items-center justify-center text-[#627478]">
+          <div className="text-3xl py-5">Subscribe</div>
+          <div className="py-5">Sign up to hear from us.</div>
+          <div className="flex flex-col md:flex-row py-5">
+            <input type="text" placeholder="" />
+            <button>SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

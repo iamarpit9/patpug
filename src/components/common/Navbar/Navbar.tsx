@@ -4,6 +4,7 @@ import React from "react";
 import logo from "/public/logo.webp";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import NavItem from "./NavItem";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
@@ -21,10 +22,22 @@ const Navbar = () => {
               </Link>
             </div>
             <div className=" ml-auto flex items-center">
+              {/* Mobile Nav */}
+
+              <MobileNav />
+              {/* Normal Nav */}
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                 <NavItem href="/" route="HOME" setActive={true} />
-                <NavItem href="/b2bexports" route="B2B/EXPORTS" setActive={true} />
-                <NavItem href="https://www.amazon.in/PatPug-Indian-Absorbent-Friendly-70x140cm/dp/B09DTDFZVF/ref=sr_1_4?crid=V84JVDDJL1TX&keywords=patpug%2Btowel&qid=1698989537&s=kitchen&sprefix=patpug%2Btowel%2Ckitchen%2C192&sr=1-4&th=1" route="BUY PATPUG" setActive={true} />
+                <NavItem
+                  href="/b2bexports"
+                  route="B2B/EXPORTS"
+                  setActive={true}
+                />
+                <NavItem
+                  href="https://www.amazon.in/PatPug-Indian-Absorbent-Friendly-70x140cm/dp/B09DTDFZVF/ref=sr_1_4?crid=V84JVDDJL1TX&keywords=patpug%2Btowel&qid=1698989537&s=kitchen&sprefix=patpug%2Btowel%2Ckitchen%2C192&sr=1-4&th=1"
+                  route="BUY PATPUG"
+                  setActive={true}
+                />
                 <NavItem href="/blog" route="BLOG" setActive={true} />
                 <NavItem href="/about-us" route="ABOUT US" setActive={true} />
               </div>
