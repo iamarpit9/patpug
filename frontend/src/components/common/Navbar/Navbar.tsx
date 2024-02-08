@@ -18,6 +18,7 @@ const Navbar = () => {
                   src={logo}
                   alt="logo"
                   className="h-[80px] w-[96px] object-contain md:w-[124px] lg:h-[104px]"
+                  priority={true}
                 />
               </Link>
             </div>
