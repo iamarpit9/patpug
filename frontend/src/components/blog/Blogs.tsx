@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
 
 const Blogs = () => {
+
+  const API_URL = process.env.API_URL || "http://127.0.0.1:1337"
+
   const [blogsData, setBlogsData] = useState<any>([]);
 
   useEffect(() => {
@@ -14,7 +17,7 @@ const Blogs = () => {
       };
 
       try {
-        const res = await fetch("http://127.0.0.1:1337/api/blogs?populate=*");
+        const res = await fetch(`${API_URL}/api/blogs?populate=*`);
         const response = await res.json();
         setBlogsData(response);
       } catch (error) {
