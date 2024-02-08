@@ -4,7 +4,7 @@ import BlogCard from "./BlogCard";
 
 const Blogs = () => {
 
-  const API_URL = process.env.API_URL ? process.env.API_URL :"http://127.0.0.1:1337"
+  const API_URL = process.env.API_URL
 
   const [blogsData, setBlogsData] = useState<any>([]);
 
