@@ -28,7 +28,7 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
-  console.log(blogsData);
+  // console.log(blogsData);
 
   return (
     <div>
