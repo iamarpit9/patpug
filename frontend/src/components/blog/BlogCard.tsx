@@ -15,7 +15,7 @@ const BlogCard = ({ blog }: any) => {
 
   return (
       <Link href="/blog/1">
-          <div><Image src={`http://127.0.0.1:1337${image?.data?.attributes.url}`} width={50}  height={50} alt=''/></div>
+      <div><Image src={`https://patpug-backend.onrender.com${image?.data?.attributes.url}`} width={50}  height={50} alt=''/></div>
               <h1>{title}</h1>
 
         <div>{truncatedDesc }</div>
