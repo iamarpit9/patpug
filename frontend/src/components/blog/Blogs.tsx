@@ -4,7 +4,7 @@ import BlogCard from "./BlogCard";
 
 const Blogs = () => {
 
-  const API_URL = "https://patpug-backend.onrender.com/"
+  const API_URL = "https://patpug-backend.onrender.com"
 
   const [blogsData, setBlogsData] = useState<any>([]);
 
