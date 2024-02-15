@@ -25,7 +25,7 @@ const NavItem = ({ route, href, setActive, setTracking }: IProps) => {
     <Link
       href={href}
       className={`p-1 text-[#151515] hover:text-[#627478] ${setTracking ? "tracking-[0.2rem]" : null} text-sm font-light ${isActive ? "border-b border-[#151515]" : null}`}
-      target={href.includes("www.amazon") ? "_blank" : ""}
+      target={href.includes("amazon") ? "_blank" : ""}
     >
       {route}
     </Link>

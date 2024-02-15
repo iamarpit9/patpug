@@ -15,7 +15,7 @@ const BlogPost = ({ title, description, createdAt, imgUrl, }: any) => {
             <p className="text-gray-500 font-light py-2">{`${day} ${month} ${year}`}</p>
             <div className='relative w-[260px] h-[180px] md:w-[500px] md:h-[400px]'>
 
-                <Image src={imgUrl} alt="" fill className='object-contain' priority/>
+                <Image src={imgUrl} alt="" fill className='object-contain' priority= {true}/>
             </div>
 
             <ReactMarkdown rehypePlugins={[rehypeRaw]} className="mt-10 text-gray-500 font-light">
