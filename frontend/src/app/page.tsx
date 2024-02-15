@@ -14,14 +14,14 @@ export default function Home() {
     <>
       <MaxWidthWrapper>
         <div className="py-5 m-5 flex flex-col lg:flex-row text-center max-w-3xl">
-          <Image src={home1} alt="home1" className="lg:min-h-[400px]" />
+          <Image src={home1} alt="home1" className="lg:min-h-[400px]" priority/>
           <div className="bg-[#EFF5F6] text-center lg:min-w-[388px]">
             <div className="flex flex-col justify-center items-center p-5 md:p-10">
               <div className="tracking-[0.2rem] text-[#627478]">WELCOME</div>
-              <div className="text-[40px] md:text-[44px]">
+              <div className="text-[40px] md:text-[44px] font-play pt-5">
                 We are the bath linen/towel Experts
               </div>
-              <div className="text-[#627478]">
+              <div className="text-[#627478] pt-5">
                 Your one-stop-shop for all kinds of towels for domestic use and
                 exports
               </div>
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-20 tracking-[0.2rem] text-[#627478]">CONTACT US</div>
+        <div className="p-5 md:pt-20 tracking-[0.2rem] text-[#627478]">CONTACT US</div>
         <div className="flex flex-col items-center justify-center py-10">
           <div className="text-[#5e5e5e] font-light text-[14px] md:text-[16px] text-center">
             We love our customers, so feel free to ping us on Whatsapp during
@@ -73,29 +73,29 @@ export default function Home() {
           </Link>
 
           <div className="pt-16 text-center font-light text-[#5e5e5e] text-sm md:text-[16px]">
-            <div>
+            <div className="py-1">
               General inquiries:{" "}
               <Link
                 href="mailto:info@patpug.com"
-                className="hover:text-[#3f484a] hover:font-normal"
+                className="hover:text-[#3f484a] hover:font-black"
               >
                 info@patpug.com
               </Link>
             </div>
-            <div>
+            <div className="py-1">
               For B2B orders:{" "}
               <Link
                 href="mailto:corporate@patpug.com"
-                className="hover:text-[#3f484a] hover:font-normal"
+                className="hover:text-[#3f484a] hover:font-black"
               >
                 corporate@patpug.com
               </Link>
             </div>
-            <div>
+            <div className="py-1">
               For export inquiries:{" "}
               <Link
                 href="mailto:exports@patpug.com"
-                className="hover:text-[#3f484a] hover:font-normal"
+                className="hover:text-[#3f484a] hover:font-black"
               >
                 exports@patpug.com
               </Link>
@@ -103,7 +103,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-20 tracking-[0.2rem] text-[#627478]">
+        <div className=" p-5 md:pt-20 tracking-[0.2rem] text-[#627478]">
           CONNECT WITH US
         </div>
 
@@ -114,16 +114,7 @@ export default function Home() {
         </div>
       </MaxWidthWrapper>
 
-      <div className="pt-20">
-        <div className="bg-[#EFF5F6] w-screen h-fit flex flex-col items-center justify-center text-[#627478]">
-          <div className="text-3xl py-5">Subscribe</div>
-          <div className="py-5">Sign up to hear from us.</div>
-          <div className="flex flex-col md:flex-row py-5">
-            <input type="text" placeholder="" />
-            <button>SIGN UP</button>
-          </div>
-        </div>
-      </div>
+      
     </>
   );
 }

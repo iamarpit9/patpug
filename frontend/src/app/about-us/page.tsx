@@ -20,13 +20,13 @@ const About = () => {
         <Card
           title="Our Experience"
           decription="We have a combined experience of more that 25 years in creating brands, partnerships, running huge teams in India, Africa, US, UK, Middle East and South East Asia. As global citizens, we realise the needs of our clients and are poised to become the one stop solution for anything textile in the next 3 years."
-          image={""}
+          
         />
 
         <Card
           title="Our Partnerships"
           decription={`At PatPug, we believe in building strong relationships with our partners. We have a network of reputed manufacturers, logistics suppliers and designers to cater to all your need while sitting at your location without moving even a needle! Just tell us what you need and leave the rest to us! `}
-          image={""}
+        
         />
       </div>
 

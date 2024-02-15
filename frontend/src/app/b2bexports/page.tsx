@@ -37,7 +37,7 @@ const B2B = () => {
         </div>
       </div>
 
-      <div className="pt-20 tracking-[0.2rem] text-[#627478]">
+      <div className="p-5 md:pt-20 tracking-[0.2rem] text-[#627478]">
         CONNECT WITH US
       </div>
 

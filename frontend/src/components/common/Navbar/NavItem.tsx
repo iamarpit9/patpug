@@ -8,20 +8,24 @@ interface IProps {
   route: string;
   href: string;
   setActive: boolean;
+  setTracking?: boolean
 }
 
-const NavItem = ({ route, href, setActive }: IProps) => {
+const NavItem = ({ route, href, setActive, setTracking }: IProps) => {
   const currentPath = usePathname();
   let isActive = false;
   if (setActive) {
     isActive = currentPath === href;
+    isActive = currentPath.includes("/blog") && route === "BLOG"
   }
+
+  // if(currentPath.includes("/blog") && route === "BLOG") isActive = true
 
   return (
     <Link
       href={href}
-      className={`p-1 text-[#151515] hover:text-[#627478] tracking-[0.2rem] text-sm font-light ${isActive ? "border-b border-[#151515]" : null}`}
-      target={href.includes("www.amazon") ? "_blanl" : ""}
+      className={`p-1 text-[#151515] hover:text-[#627478] ${setTracking ? "tracking-[0.2rem]" : null} text-sm font-light ${isActive ? "border-b border-[#151515]" : null}`}
+      target={href.includes("www.amazon") ? "_blank" : ""}
     >
       {route}
     </Link>
