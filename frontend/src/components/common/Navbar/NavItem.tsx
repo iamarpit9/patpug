@@ -16,15 +16,16 @@ const NavItem = ({ route, href, setActive, setTracking }: IProps) => {
   let isActive = false;
   if (setActive) {
     isActive = currentPath === href;
-    isActive = currentPath.includes("/blog") && route === "BLOG"
-  }
+    if (currentPath.includes("/blog") && route === "BLOG") {
+      isActive = true;
+    }  }
 
   // if(currentPath.includes("/blog") && route === "BLOG") isActive = true
 
   return (
     <Link
       href={href}
-      className={`p-1 text-[#151515] hover:text-[#627478] ${setTracking ? "tracking-[0.2rem]" : null} text-sm font-light ${isActive ? "border-b border-[#151515]" : null}`}
+      className={`p-1 text-[#151515] hover:text-[#627478] ${setTracking ? "tracking-[0.2rem]" : null} text-sm font-light  ${isActive ? "border-b border-[#151515]" : ""}`}
       target={href.includes("amazon") ? "_blank" : ""}
     >
       {route}
