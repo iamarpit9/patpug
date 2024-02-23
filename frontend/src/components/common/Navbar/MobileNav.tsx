@@ -31,26 +31,45 @@ const MobileNav = () => {
         </div>
         <div className="flex flex-col items-center justify-center">
           <div className="my-5" onClick={handleClick}>
-            <NavItem href="/" route="HOME" setActive={true} setTracking={true} />
+            <NavItem
+              href="/"
+              route="HOME"
+              setActive={true}
+              setTracking={true}
+            />
           </div>
           <div className="my-5" onClick={handleClick}>
-            <NavItem href="/b2bexports" route="B2B/EXPORTS" setActive={true} setTracking={true} />
+            <NavItem
+              href="/b2bexports"
+              route="B2B/EXPORTS"
+              setActive={true}
+              setTracking={true}
+            />
           </div>
           <div className="my-5" onClick={handleClick}>
             <NavItem
               href="https://www.amazon.in/PatPug-Indian-Absorbent-Friendly-70x140cm/dp/B09DTDFZVF/ref=sr_1_4?crid=V84JVDDJL1TX&keywords=patpug%2Btowel&qid=1698989537&s=kitchen&sprefix=patpug%2Btowel%2Ckitchen%2C192&sr=1-4&th=1"
               route="BUY PATPUG"
               setActive={true}
-              setTracking={true} 
+              setTracking={true}
             />
           </div>
           <div className="my-5" onClick={handleClick}>
-            <NavItem href="/blog" route="BLOG" setActive={true} setTracking={true} />
+            <NavItem
+              href="/blog"
+              route="BLOG"
+              setActive={true}
+              setTracking={true}
+            />
           </div>
           <div className="my-5" onClick={handleClick}>
-            <NavItem href="/about-us" route="ABOUT US" setActive={true} setTracking={true} />
+            <NavItem
+              href="/about-us"
+              route="ABOUT US"
+              setActive={true}
+              setTracking={true}
+            />
           </div>
-        
         </div>
       </div>
     </>

@@ -4,6 +4,13 @@ import React from "react";
 import ch1 from "/public/about/ch1.webp";
 import ch2 from "/public/about/ch2.webp";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "You are in good hands!",
+  description:
+    "We are IIM Ahmedabad graduates and come from a deep knowledge of terry towel development. Our word is our commitment and you will be proud of working with us.",
+};
 
 const About = () => {
   return (
@@ -20,13 +27,11 @@ const About = () => {
         <Card
           title="Our Experience"
           decription="We have a combined experience of more that 25 years in creating brands, partnerships, running huge teams in India, Africa, US, UK, Middle East and South East Asia. As global citizens, we realise the needs of our clients and are poised to become the one stop solution for anything textile in the next 3 years."
-          
         />
 
         <Card
           title="Our Partnerships"
           decription={`At PatPug, we believe in building strong relationships with our partners. We have a network of reputed manufacturers, logistics suppliers and designers to cater to all your need while sitting at your location without moving even a needle! Just tell us what you need and leave the rest to us! `}
-        
         />
       </div>
 

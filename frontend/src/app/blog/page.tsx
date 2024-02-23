@@ -1,32 +1,24 @@
-"use client"
-import BlogCard from "@/components/blog/BlogCard";
-import Loader from "@/components/common/Loader";
+import Blogs from "@/components/blog/Blogs";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import { GetBlogs } from "@/utils/utils";
+import { Metadata } from "next";
 
-
+export const metadata: Metadata = {
+  title: "PatPug - Blog",
+  description:
+    "We are the industry leaders in the bath linen/Towel space using different type of fibers! We share our knowledge with our clients/customers periodically.",
+};
 
 const Blog = () => {
-
-
-  const { blogs, error, isLoading } = GetBlogs()
-
-  if (isLoading) return <Loader/>
-  if (error) return <div>{error}</div>
-
   return (
     <MaxWidthWrapper>
       <div className="pt-20 md:max-w-3xl">
         <div className="tracking-[0.2rem] text-[#627478]">
           WE SHARE WHAT WE BELIEVE IN!
         </div>
-        </div>
-      <div className="flex flex-col items-center justify-center lg:min-w-[338px]">
-        {blogs.map((blog: any) => (
-          <BlogCard blog={blog} key={blog.id} />
-        ))}
       </div>
-
+      <div className="flex flex-col items-center justify-center lg:min-w-[338px]">
+        <Blogs />
+      </div>
     </MaxWidthWrapper>
   );
 };

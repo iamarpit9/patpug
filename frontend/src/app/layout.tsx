@@ -8,19 +8,23 @@ const open_sans = Open_Sans({
   weight: "300",
   variable: "--font-open",
   subsets: ["latin"],
-
-})
+});
 
 const playfair = Playfair_Display({
   weight: "400",
   variable: "--font-play",
   subsets: ["latin"],
-
-})
+});
 
 export const metadata: Metadata = {
-  title: "Patpug - Live in your Comfort Zone",
+  title: {
+    template: "%s",
+    default: "Quality Towels for B2B Manufacturing and Exports",
+  },
   description: "We are the bath linen/Towel experts",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({

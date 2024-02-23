@@ -14,7 +14,12 @@ export default function Home() {
     <>
       <MaxWidthWrapper>
         <div className="py-5 m-5 flex flex-col lg:flex-row text-center max-w-3xl">
-          <Image src={home1} alt="home1" className="lg:min-h-[400px]" priority/>
+          <Image
+            src={home1}
+            alt="home1"
+            className="lg:min-h-[400px]"
+            priority
+          />
           <div className="bg-[#EFF5F6] text-center lg:min-w-[388px]">
             <div className="flex flex-col justify-center items-center p-5 md:p-10">
               <div className="tracking-[0.2rem] text-[#627478]">WELCOME</div>
@@ -52,7 +57,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-5 md:pt-20 tracking-[0.2rem] text-[#627478]">CONTACT US</div>
+        <div className="p-5 md:pt-20 tracking-[0.2rem] text-[#627478]">
+          CONTACT US
+        </div>
         <div className="flex flex-col items-center justify-center py-10">
           <div className="text-[#5e5e5e] font-light text-[14px] md:text-[16px] text-center">
             We love our customers, so feel free to ping us on Whatsapp during
@@ -113,8 +120,6 @@ export default function Home() {
           </Link>
         </div>
       </MaxWidthWrapper>
-
-      
     </>
   );
 }

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -8,8 +8,6 @@ import NavItem from "./NavItem";
 import MobileNav from "./MobileNav";
 
 const Navbar = () => {
-
-
   return (
     <div className="bg-white h-36 z-50 top-0 inset-x-0">
       <header className="relative bg-white">
@@ -31,22 +29,36 @@ const Navbar = () => {
               <MobileNav />
               {/* Normal Nav */}
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                <NavItem href="/" route="HOME" setActive={true} setTracking={true} />
+                <NavItem
+                  href="/"
+                  route="HOME"
+                  setActive={true}
+                  setTracking={true}
+                />
                 <NavItem
                   href="/b2bexports"
                   route="B2B/EXPORTS"
                   setActive={true}
-                  setTracking={true} 
+                  setTracking={true}
                 />
                 <NavItem
                   href="https://www.amazon.in/PatPug-Indian-Absorbent-Friendly-70x140cm/dp/B09DTDFZVF/ref=sr_1_4?crid=V84JVDDJL1TX&keywords=patpug%2Btowel&qid=1698989537&s=kitchen&sprefix=patpug%2Btowel%2Ckitchen%2C192&sr=1-4&th=1"
                   route="BUY PATPUG"
                   setActive={true}
-                  setTracking={true} 
+                  setTracking={true}
                 />
-                <NavItem href="/blog" route="BLOG" setActive={true} setTracking={true} />
-                <NavItem href="/about-us" route="ABOUT US" setActive={true} setTracking={true} />
-
+                <NavItem
+                  href="/blog"
+                  route="BLOG"
+                  setActive={true}
+                  setTracking={true}
+                />
+                <NavItem
+                  href="/about-us"
+                  route="ABOUT US"
+                  setActive={true}
+                  setTracking={true}
+                />
               </div>
             </div>
           </div>

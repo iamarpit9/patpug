@@ -14,23 +14,23 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        open: ['var(--font-open)'],
-        play: ['var(--font-play)'],
+        open: ["var(--font-open)"],
+        play: ["var(--font-play)"],
       },
       animation: {
-        'spinner-grow-fast': 'spinner-grow-fast 0.75s linear infinite',
-        'spinner-grow-slow': 'spinner-grow-slow 1.5s linear infinite',
+        "spinner-grow-fast": "spinner-grow-fast 0.75s linear infinite",
+        "spinner-grow-slow": "spinner-grow-slow 1.5s linear infinite",
       },
       keyframes: {
-        'spinner-grow-fast': {
-          '0%': { transform: 'scale(0)' },
-          '50%': { opacity: '1', transform: 'scale(1)' },
-          '100%': { opacity: '0', transform: 'scale(1)' },
+        "spinner-grow-fast": {
+          "0%": { transform: "scale(0)" },
+          "50%": { opacity: "1", transform: "scale(1)" },
+          "100%": { opacity: "0", transform: "scale(1)" },
         },
-        'spinner-grow-slow': {
-          '0%': { transform: 'scale(0)' },
-          '50%': { opacity: '1', transform: 'scale(1)' },
-          '100%': { opacity: '0', transform: 'scale(1)' },
+        "spinner-grow-slow": {
+          "0%": { transform: "scale(0)" },
+          "50%": { opacity: "1", transform: "scale(1)" },
+          "100%": { opacity: "0", transform: "scale(1)" },
         },
       },
     },

@@ -8,7 +8,7 @@ interface IProps {
   route: string;
   href: string;
   setActive: boolean;
-  setTracking?: boolean
+  setTracking?: boolean;
 }
 
 const NavItem = ({ route, href, setActive, setTracking }: IProps) => {
@@ -18,7 +18,8 @@ const NavItem = ({ route, href, setActive, setTracking }: IProps) => {
     isActive = currentPath === href;
     if (currentPath.includes("/blog") && route === "BLOG") {
       isActive = true;
-    }  }
+    }
+  }
 
   // if(currentPath.includes("/blog") && route === "BLOG") isActive = true
 
